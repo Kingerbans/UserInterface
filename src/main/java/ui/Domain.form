@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="ui.Domain">
+  <grid id="27dc6" binding="mainPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="500" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <scrollpane id="a8fdc">
+        <constraints border-constraint="Center"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <grid id="dd6e3" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints/>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <grid id="89a" layout-manager="BorderLayout" hgap="0" vgap="30">
+                <constraints border-constraint="North"/>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <grid id="cee70" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="40">
+                    <margin top="5" left="20" bottom="5" right="20"/>
+                    <constraints border-constraint="Center"/>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <grid id="48eb2" layout-manager="BorderLayout" hgap="0" vgap="10">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties/>
+                        <border type="none"/>
+                        <children>
+                          <component id="573c4" class="javax.swing.JLabel">
+                            <constraints border-constraint="North"/>
+                            <properties>
+                              <text value="This table automatically adds new domain when the extension encounters it."/>
+                            </properties>
+                          </component>
+                          <grid id="e1397" layout-manager="BorderLayout" hgap="0" vgap="0">
+                            <constraints border-constraint="Center"/>
+                            <properties/>
+                            <border type="none"/>
+                            <children>
+                              <grid id="20875" layout-manager="BorderLayout" hgap="10" vgap="0">
+                                <constraints border-constraint="West"/>
+                                <properties/>
+                                <border type="none"/>
+                                <children>
+                                  <grid id="a148d" layout-manager="BorderLayout" hgap="0" vgap="0">
+                                    <constraints border-constraint="West"/>
+                                    <properties/>
+                                    <border type="none"/>
+                                    <children>
+                                      <grid id="1431e" layout-manager="BorderLayout" hgap="0" vgap="0">
+                                        <constraints border-constraint="West"/>
+                                        <properties/>
+                                        <border type="none"/>
+                                        <children>
+                                          <grid id="61e71" layout-manager="GridBagLayout">
+                                            <constraints border-constraint="North"/>
+                                            <properties/>
+                                            <border type="none"/>
+                                            <children>
+                                              <component id="286d8" class="javax.swing.JButton" binding="addButton" default-binding="true">
+                                                <constraints>
+                                                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                                                  <gridbag top="0" left="0" bottom="5" right="0" weightx="0.0" weighty="0.0"/>
+                                                </constraints>
+                                                <properties>
+                                                  <text value="Add"/>
+                                                </properties>
+                                              </component>
+                                              <component id="503d0" class="javax.swing.JButton" binding="editButton" default-binding="true">
+                                                <constraints>
+                                                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                                                  <gridbag top="0" left="0" bottom="5" right="0" weightx="0.0" weighty="0.0"/>
+                                                </constraints>
+                                                <properties>
+                                                  <text value="Edit"/>
+                                                </properties>
+                                              </component>
+                                              <component id="fc307" class="javax.swing.JButton" binding="deleteButton" default-binding="true">
+                                                <constraints>
+                                                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                                                  <gridbag top="0" left="0" bottom="5" right="0" weightx="0.0" weighty="0.0"/>
+                                                </constraints>
+                                                <properties>
+                                                  <text value="Delete"/>
+                                                </properties>
+                                              </component>
+                                            </children>
+                                          </grid>
+                                        </children>
+                                      </grid>
+                                    </children>
+                                  </grid>
+                                  <scrollpane id="40b43">
+                                    <constraints border-constraint="Center"/>
+                                    <properties>
+                                      <preferredSize width="500" height="200"/>
+                                    </properties>
+                                    <border type="none"/>
+                                    <children>
+                                      <component id="44a84" class="javax.swing.JTable" binding="table1" default-binding="true">
+                                        <constraints/>
+                                        <properties>
+                                          <autoResizeMode value="3"/>
+                                        </properties>
+                                      </component>
+                                    </children>
+                                  </scrollpane>
+                                </children>
+                              </grid>
+                            </children>
+                          </grid>
+                        </children>
+                      </grid>
+                    </children>
+                  </grid>
+                  <grid id="ea9bc" layout-manager="BorderLayout" hgap="0" vgap="0">
+                    <constraints border-constraint="North"/>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <grid id="e4da9" layout-manager="BorderLayout" hgap="0" vgap="0">
+                        <constraints border-constraint="West"/>
+                        <properties>
+                          <preferredSize width="20" height="0"/>
+                        </properties>
+                        <border type="none"/>
+                        <children/>
+                      </grid>
+                      <grid id="33a8" layout-manager="BorderLayout" hgap="0" vgap="0">
+                        <constraints border-constraint="Center"/>
+                        <properties/>
+                        <border type="none"/>
+                        <children>
+                          <grid id="e0f5" layout-manager="GridBagLayout">
+                            <constraints border-constraint="West"/>
+                            <properties>
+                              <alignmentX value="0.5"/>
+                            </properties>
+                            <border type="none"/>
+                            <children>
+                              <component id="1ccaa" class="javax.swing.JLabel">
+                                <constraints>
+                                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                                  <gridbag weightx="0.0" weighty="0.0"/>
+                                </constraints>
+                                <properties>
+                                  <font size="20" style="1"/>
+                                  <text value="Domain Unique Key"/>
+                                </properties>
+                              </component>
+                              <vspacer id="dbb6f">
+                                <constraints>
+                                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                                  <gridbag weightx="0.0" weighty="0.0"/>
+                                </constraints>
+                              </vspacer>
+                              <component id="6d0fa" class="javax.swing.JLabel">
+                                <constraints>
+                                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                                  <gridbag weightx="0.0" weighty="0.0"/>
+                                </constraints>
+                                <properties>
+                                  <text value="Use these settings to handle unique keys for domains"/>
+                                </properties>
+                              </component>
+                            </children>
+                          </grid>
+                        </children>
+                      </grid>
+                    </children>
+                  </grid>
+                </children>
+              </grid>
+            </children>
+          </grid>
+        </children>
+      </scrollpane>
+    </children>
+  </grid>
+</form>
