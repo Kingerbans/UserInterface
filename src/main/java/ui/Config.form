@@ -26,8 +26,11 @@
                   <gridbag top="0" left="0" bottom="5" right="0" weightx="0.0" weighty="0.0"/>
                 </constraints>
                 <properties>
+                  <font style="1"/>
+                  <horizontalAlignment value="2"/>
+                  <icon value="icons/icons8-home-32.png"/>
                   <preferredSize width="78" height="70"/>
-                  <text value="General"/>
+                  <text value="    General"/>
                 </properties>
               </component>
               <component id="74100" class="javax.swing.JButton" binding="scopeButton" default-binding="true">
@@ -36,8 +39,11 @@
                   <gridbag top="0" left="0" bottom="5" right="0" weightx="0.1" weighty="0.0"/>
                 </constraints>
                 <properties>
+                  <font style="1"/>
+                  <horizontalAlignment value="2"/>
+                  <icon value="icons/icons8-my-location-32.png"/>
                   <preferredSize width="78" height="70"/>
-                  <text value="Scope"/>
+                  <text value="    Scope"/>
                 </properties>
               </component>
               <component id="fbabb" class="javax.swing.JButton" binding="domainButton" default-binding="true">
@@ -46,8 +52,12 @@
                   <gridbag top="0" left="0" bottom="5" right="0" weightx="0.0" weighty="0.0"/>
                 </constraints>
                 <properties>
+                  <font style="1"/>
+                  <horizontalAlignment value="2"/>
+                  <horizontalTextPosition value="11"/>
+                  <icon value="icons/icons8-ioxhost-32.png"/>
                   <preferredSize width="80" height="70"/>
-                  <text value="Domain"/>
+                  <text value="    Domain"/>
                 </properties>
               </component>
               <component id="cce09" class="javax.swing.JButton" binding="userButton" default-binding="true">
@@ -56,8 +66,12 @@
                   <gridbag weightx="0.0" weighty="0.0"/>
                 </constraints>
                 <properties>
+                  <font style="1"/>
+                  <horizontalAlignment value="2"/>
+                  <horizontalTextPosition value="11"/>
+                  <icon value="icons/icons8-user-32.png"/>
                   <preferredSize width="78" height="70"/>
-                  <text value="User"/>
+                  <text value="    User"/>
                 </properties>
               </component>
             </children>
