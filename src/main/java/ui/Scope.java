@@ -8,12 +8,20 @@ import javax.swing.*;
 @Getter
 @Setter
 public class Scope {
+    private static Scope instance;
     private JPanel mainPanel;
     private JButton addButton;
     private JButton editButton;
     private JButton deleteButton;
     private JTable table1;
 
-    public Scope() {
+    public static Scope getInstance() {
+        if (instance == null) {
+            instance = new Scope();
+        }
+        return instance;
+    }
+
+    private Scope() {
     }
 }

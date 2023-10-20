@@ -8,6 +8,7 @@ import javax.swing.*;
 @Getter
 @Setter
 public class User {
+    private static User instance;
     private JPanel mainPanel;
     private JButton addButton;
     private JButton editButton;
@@ -16,6 +17,13 @@ public class User {
     private JButton fieldButton;
     private JButton sessionButton;
 
-    public User() {
+    public static User getInstance() {
+        if (instance == null) {
+            instance = new User();
+        }
+        return instance;
+    }
+
+    private User() {
     }
 }

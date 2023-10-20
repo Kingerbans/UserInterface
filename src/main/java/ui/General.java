@@ -8,8 +8,16 @@ import javax.swing.*;
 @Getter
 @Setter
 public class General {
+    private static General instance;
     private JPanel mainPanel;
 
-    public General() {
+    public static General getInstance() {
+        if (instance == null) {
+            instance = new General();
+        }
+        return instance;
+    }
+
+    private General() {
     }
 }

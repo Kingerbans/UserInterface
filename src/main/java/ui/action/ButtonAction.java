@@ -2,53 +2,50 @@ package ui.action;
 
 import burp.api.montoya.MontoyaApi;
 import ui.*;
+import ui.custom.ConfigJframe;
 
 import javax.swing.*;
 import java.awt.*;
 
 public class ButtonAction {
-    public static void configButtonAction(MontoyaApi api) {
-        api.logging().logToOutput("xxxxxxxxx");
-        JFrame frame = new JFrame();
-        frame.setTitle("");
-        frame.setSize(1200, 800);
-        Config config = new Config(api);
-        frame.getContentPane().add(config.getMainPanel());
-        frame.setLocationRelativeTo(null);
-        frame.setVisible(true);
+    public static void configButtonAction() {
+        ConfigJframe configJframe = ConfigJframe.getInstance();
+        if (!configJframe.isVisible()) {
+            configJframe.setVisible(true);
+        }
     }
 
-    public static void scopeButtonAction(MontoyaApi api, JPanel panel) {
+    public static void scopeButtonAction(JPanel panel) {
         panel.setBorder(null);
         panel.removeAll();
-        Scope scope = new Scope();
+        Scope scope = Scope.getInstance();
         panel.add(scope.getMainPanel(), BorderLayout.CENTER);
         panel.revalidate();
         panel.repaint();
     }
 
-    public static void userButtonAction(MontoyaApi api, JPanel panel) {
+    public static void userButtonAction(JPanel panel) {
         panel.setBorder(null);
         panel.removeAll();
-        User user = new User();
+        User user = User.getInstance();
         panel.add(user.getMainPanel(), BorderLayout.CENTER);
         panel.revalidate();
         panel.repaint();
     }
 
-    public static void domainButtonAction(MontoyaApi api, JPanel panel) {
+    public static void domainButtonAction(JPanel panel) {
         panel.setBorder(null);
         panel.removeAll();
-        Domain domain = new Domain();
+        Domain domain = Domain.getInstance();
         panel.add(domain.getMainPanel(), BorderLayout.CENTER);
         panel.revalidate();
         panel.repaint();
     }
 
-    public static void generalButtonAction(MontoyaApi api, JPanel panel) {
+    public static void generalButtonAction(JPanel panel) {
         panel.setBorder(null);
         panel.removeAll();
-        General general = new General();
+        General general = General.getInstance();
         panel.add(general.getMainPanel(), BorderLayout.CENTER);
         panel.revalidate();
         panel.repaint();

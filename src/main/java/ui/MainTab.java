@@ -12,6 +12,7 @@ import javax.swing.*;
 @Getter
 @Setter
 public class MainTab {
+    public static MontoyaApi api;
     private JTextField logSearchTextField;
     private JTable endpointTable;
     private JTabbedPane displayMessageTabbedPane;
@@ -19,7 +20,8 @@ public class MainTab {
     private JButton configButton;
 
     public MainTab(MontoyaApi api) {
+        MainTab.api = api;
         api.logging().logToOutput("xxxxxxxxxaaaaaaaaaaaaa");
-        configButton.addActionListener(e -> ButtonAction.configButtonAction(api));
+        configButton.addActionListener(e -> ButtonAction.configButtonAction());
     }
 }
