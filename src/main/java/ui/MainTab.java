@@ -1,6 +1,5 @@
 package ui;
 
-import burp.api.montoya.MontoyaApi;
 import lombok.Getter;
 import lombok.Setter;
 import ui.custom.ConfigJframe;
