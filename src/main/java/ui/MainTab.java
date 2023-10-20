@@ -1,10 +1,9 @@
 package ui;
 
 import burp.api.montoya.MontoyaApi;
-import com.formdev.flatlaf.FlatLaf;
 import lombok.Getter;
 import lombok.Setter;
-import ui.action.ButtonAction;
+import ui.custom.ConfigJframe;
 
 import javax.swing.*;
 
@@ -12,16 +11,28 @@ import javax.swing.*;
 @Getter
 @Setter
 public class MainTab {
-    public static MontoyaApi api;
+    private static MainTab instance;
     private JTextField logSearchTextField;
     private JTable endpointTable;
     private JTabbedPane displayMessageTabbedPane;
     private JPanel mainPanel;
     private JButton configButton;
 
-    public MainTab(MontoyaApi api) {
-        MainTab.api = api;
-        api.logging().logToOutput("xxxxxxxxxaaaaaaaaaaaaa");
-        configButton.addActionListener(e -> ButtonAction.configButtonAction());
+    public static MainTab getInstance() {
+        if (instance == null) {
+            instance = new MainTab();
+        }
+        return instance;
+    }
+
+    private MainTab() {
+        configButton.addActionListener(e -> configButtonAction());
+    }
+
+    private void configButtonAction() {
+        ConfigJframe configJframe = ConfigJframe.getInstance();
+        if (!configJframe.isVisible()) {
+            configJframe.setVisible(true);
+        }
     }
 }
