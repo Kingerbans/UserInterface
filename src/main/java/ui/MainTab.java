@@ -33,5 +33,6 @@ public class MainTab {
         if (!configJframe.isVisible()) {
             configJframe.setVisible(true);
         }
+        configJframe.toFront();
     }
 }

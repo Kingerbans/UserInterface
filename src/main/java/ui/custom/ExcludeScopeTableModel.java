@@ -12,7 +12,7 @@ import javax.swing.table.AbstractTableModel;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class IncludeScopeTableModel extends AbstractTableModel {
+public class ExcludeScopeTableModel extends AbstractTableModel {
     private String[] columnName = {"Enable", "Regex"};
     private int[] columnWidth = {100, 400};
 

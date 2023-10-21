@@ -154,7 +154,7 @@
                                 </constraints>
                                 <properties>
                                   <font size="20" style="1"/>
-                                  <text value="Domain Unique Key"/>
+                                  <text value="Domain Unique Request"/>
                                 </properties>
                               </component>
                               <vspacer id="dbb6f">
@@ -169,7 +169,7 @@
                                   <gridbag weightx="0.0" weighty="0.0"/>
                                 </constraints>
                                 <properties>
-                                  <text value="Use these settings to handle unique keys for domains"/>
+                                  <text value="Use these settings to handle unique requests for domains"/>
                                 </properties>
                               </component>
                             </children>
