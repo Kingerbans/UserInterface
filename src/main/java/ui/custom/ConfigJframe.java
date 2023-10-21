@@ -13,6 +13,7 @@ public class ConfigJframe extends JFrame {
         getContentPane().add(config.getMainPanel());
         setLocationRelativeTo(null);
         setVisible(true);
+        setAlwaysOnTop(true);
     }
 
     public static ConfigJframe getInstance() {
