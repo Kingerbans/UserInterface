@@ -102,11 +102,11 @@
                                   <scrollpane id="40b43">
                                     <constraints border-constraint="Center"/>
                                     <properties>
-                                      <preferredSize width="500" height="200"/>
+                                      <preferredSize width="800" height="200"/>
                                     </properties>
                                     <border type="none"/>
                                     <children>
-                                      <component id="44a84" class="javax.swing.JTable" binding="table1" default-binding="true">
+                                      <component id="44a84" class="javax.swing.JTable" binding="domainUniqueRequestTable">
                                         <constraints/>
                                         <properties>
                                           <autoResizeMode value="3"/>

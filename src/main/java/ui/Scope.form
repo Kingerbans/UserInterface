@@ -252,7 +252,7 @@
                                 <properties/>
                                 <border type="none"/>
                                 <children>
-                                  <component id="73674" class="javax.swing.JTextField" default-binding="true">
+                                  <component id="73674" class="javax.swing.JTextField" binding="editFilterExtensionTextField">
                                     <constraints/>
                                     <properties>
                                       <editable value="false"/>

@@ -7,6 +7,7 @@ import ui.custom.IncludeScopeTableModel;
 
 import javax.swing.*;
 import java.awt.*;
+import java.util.Objects;
 
 @Getter
 @Setter
@@ -22,6 +23,7 @@ public class Scope {
     private JButton deleteExcludeScopeButton;
     private JButton editFilterExtensionButton;
     private JTable excludeScopeTable;
+    private JTextField editFilterExtensionTextField;
 
     public static Scope getInstance() {
         if (instance == null) {
@@ -42,9 +44,12 @@ public class Scope {
         addIncludeScopeButton.addActionListener(e -> addIncludeScopeButtonAction());
         editIncludeScopeButton.addActionListener(e -> editIncludeScopeButtonAction());
         deleteIncludeScopeButton.addActionListener(e -> deleteIncludeScopeButtonAction());
+
         addExcludeScopeButton.addActionListener(e -> addExcludeScopeButtonAction());
         editExcludeScopeButton.addActionListener(e -> editExcludeScopeButtonAction());
         deleteExcludeScopeButton.addActionListener(e -> deleteExcludeScopeButtonAction());
+
+        editFilterExtensionButton.addActionListener(e -> editFilterExtensionButtonAction());
     }
 
     private void addIncludeScopeButtonAction() {
@@ -58,6 +63,7 @@ public class Scope {
         textField.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
                 textField.setText("");
+                textField.setFont(font);
             }
         });
         panel.add(label, BorderLayout.WEST);
@@ -82,6 +88,7 @@ public class Scope {
         textField.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
                 textField.setText("");
+                textField.setFont(font);
             }
         });
         panel.add(label, BorderLayout.WEST);
@@ -93,5 +100,15 @@ public class Scope {
     }
 
     private void deleteExcludeScopeButtonAction() {
+    }
+
+    private void editFilterExtensionButtonAction() {
+        if (Objects.equals(editFilterExtensionButton.getText(), "Edit")) {
+            editFilterExtensionTextField.setEditable(true);
+            editFilterExtensionButton.setText("Save");
+        } else {
+            editFilterExtensionTextField.setEditable(false);
+            editFilterExtensionButton.setText("Edit");
+        }
     }
 }
