@@ -2,6 +2,7 @@ package ui;
 
 import lombok.Getter;
 import lombok.Setter;
+import ui.custom.UserTableModel;
 
 import javax.swing.*;
 
@@ -13,7 +14,7 @@ public class User {
     private JButton addButton;
     private JButton editButton;
     private JButton deleteButton;
-    private JTable table1;
+    private JTable userTable;
     private JButton fieldButton;
     private JButton sessionButton;
 
@@ -25,5 +26,7 @@ public class User {
     }
 
     private User() {
+        UserTableModel userTableModel = new UserTableModel();
+        userTable.setModel(userTableModel);
     }
 }

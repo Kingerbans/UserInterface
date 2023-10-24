@@ -3,6 +3,7 @@ package ui;
 import lombok.Getter;
 import lombok.Setter;
 import ui.custom.ConfigJframe;
+import ui.custom.EndpointTableModel;
 
 import javax.swing.*;
 
@@ -25,6 +26,10 @@ public class MainTab {
     }
 
     private MainTab() {
+        EndpointTableModel endpointTableModel = new EndpointTableModel();
+        endpointTable.setModel(endpointTableModel);
+        endpointTableModel.setColumnWidth(endpointTable);
+
         configButton.addActionListener(e -> configButtonAction());
     }
 

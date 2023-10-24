@@ -37,7 +37,7 @@ public class IncludeScopeTableModel extends AbstractTableModel {
     }
 
     public void setColumnWidth(JTable table){
-        for (int i = 0; i < columnWidth.length; ++i) {
+        for (int i = 0; i < columnName.length; ++i) {
             table.getColumnModel().getColumn(i).setPreferredWidth(columnWidth[i]);
         }
     }

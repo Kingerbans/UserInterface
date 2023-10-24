@@ -1,21 +1,11 @@
 package ui.custom;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-
 import javax.swing.*;
 import javax.swing.table.AbstractTableModel;
 
-@Getter
-@Setter
-@NoArgsConstructor
-@AllArgsConstructor
-public class ExcludeScopeTableModel extends AbstractTableModel {
-    private String[] columnName = {"Enable", "Regex"};
-    private int[] columnWidth = {100, 400};
-
+public class EndpointTableModel extends AbstractTableModel {
+    private String[] columnName = {"#", "Time", "Status", "Method", "Host", "Path", "Query", "Status Code", "Length"};
+    private int[] columnWidth = {75, 200, 150, 75, 200, 300, 200, 100, 75};
     @Override
     public int getRowCount() {
         return 0;

@@ -5,17 +5,14 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import javax.swing.*;
 import javax.swing.table.AbstractTableModel;
 
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class ExcludeScopeTableModel extends AbstractTableModel {
-    private String[] columnName = {"Enable", "Regex"};
-    private int[] columnWidth = {100, 400};
-
+public class UserTableModel extends AbstractTableModel {
+    private String[] columnName = {"Color", "Name"};
     @Override
     public int getRowCount() {
         return 0;
@@ -34,11 +31,5 @@ public class ExcludeScopeTableModel extends AbstractTableModel {
     @Override
     public String getColumnName(int columnIndex){
         return columnName[columnIndex];
-    }
-
-    public void setColumnWidth(JTable table){
-        for (int i = 0; i < columnName.length; ++i) {
-            table.getColumnModel().getColumn(i).setPreferredWidth(columnWidth[i]);
-        }
     }
 }

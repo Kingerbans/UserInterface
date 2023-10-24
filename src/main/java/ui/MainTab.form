@@ -92,7 +92,10 @@
                     <children>
                       <component id="6ae05" class="javax.swing.JTable" binding="endpointTable">
                         <constraints/>
-                        <properties/>
+                        <properties>
+                          <autoCreateRowSorter value="true"/>
+                          <autoResizeMode value="0"/>
+                        </properties>
                       </component>
                     </children>
                   </scrollpane>
