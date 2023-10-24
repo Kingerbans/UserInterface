@@ -5,7 +5,6 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import javax.swing.*;
 import javax.swing.table.AbstractTableModel;
 
 @Getter
